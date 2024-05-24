@@ -9,3 +9,4 @@ function GamlaEvenemang() {
   )
 }
 export default GamlaEvenemang
+
