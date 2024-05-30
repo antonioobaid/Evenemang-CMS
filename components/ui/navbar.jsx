@@ -35,8 +35,8 @@ const Navbar = () => {
               <Link href="/sign-in" className="text-gray-700 font-bold hover:text-gray-500">
                 Logga In
               </Link>
-              <Link href="/register" className="text-gray-700 font-bold hover:text-gray-500">
-                Registrera
+              <Link href="/sign-in" className="text-gray-700 font-bold hover:text-gray-500">
+                Sign Up
               </Link>
             </>
           </SignedOut>
