@@ -7,15 +7,15 @@ import { getStorage} from "firebase/storage";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDT8WLethL6D17GwIyhLzKds-j4GLAC42w",
-  authDomain: "event-bb7e9.firebaseapp.com" ,
- projectId: "event-bb7e9",
-  storageBucket: "event-bb7e9.appspot.com" ,
-  messagingSenderId: "864944223301",
-  appId: "1:864944223301:web:4c358e3c28d07a137f9f2c"
+  apiKey:process.env.NEXT_PUBLIC_API_KEY,
+  authDomain:process.env.NEXT_PUBLIC_AUTH_DOMAIN,
+  projectId:process.env.NEXT_PUBLIC_PROJECT_ID,
+  storageBucket:process.env.NEXT_PUBLIC_STORAGE_BUCKET,
+  messagingSenderId:process.env.NEXT_PUBLIC_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_APP_ID
 };
 
-// Initialize Firebase
+
 const app = getApps().length ? getApp() : initializeApp(firebaseConfig);
 
 const auth = getAuth(app);

@@ -1,5 +1,3 @@
-
-
 function PrivateLayout({children}) {
   return (
     <div>
